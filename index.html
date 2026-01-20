@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Tradutor Inteligente</title>
+</head>
+
+<body>
+  <div class="caixa-maior">
+    <textarea class="input-texto"></textarea>
+    
+    <div class="controle">
+      
+      <select class="idiomas">
+        <option value="en">Inglês</option>
+        <option value="fr">Francês</option>
+        <option value="it">Italiano</option>
+        <option value="ru">Russo</option>
+      </select>
+      
+      <button onclick="traduzir()">
+        <img src="./img/traduzir.svg">
+      </button>
+      
+      <button onclick="ouvirVoz()">
+        <img src="./img/microfone.svg">
+      </button>
+    </div>
+    
+    <div class="resultado">
+      <h3 class="titulo-traducao">Tradução</h3>
+      <p class="traducao">A tradução aparecerá aqui...</p>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+
+</html>
